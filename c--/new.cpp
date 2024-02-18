@@ -1,19 +1,30 @@
 #include <new>
 #include <vector>
+#include <iostream>
 using namespace std;
-int main()
+int main(int argc, char** argv)
 {
-	size_t n = 14ll*1000*1000*1000/8;
+	cout<<"Running this will likely trigger OOM conditions, your system may freeze/crash\n";
+	cout<<"How many GB of available RAM do you have?\n";
+
+	size_t n;
+	cin >> n;
+	n = n + 1;
+	cout<<"Trying to reserve " << n << " GB of memory"<<endl;
+	n = n * 1024*1024*1024;
 	try{
-	std::vector<size_t> x;
-	x.reserve(n);
-	for (size_t i = 0; i<n; i++){
-		x.push_back(i);
-	}
+		std::vector<size_t> x;
+		x.reserve(n);
+		cout<<"Alloc ok, lets fill it with zeros..."<<endl;
+		for (size_t i = 0; i<n; i++){
+			x.push_back(i);
+		}
 	}
 	catch (std::bad_alloc) {
-	return 1;
+		cout<<"Got bad alloc!";
+		return 1;
 	}
+	cout<<"Program finished without exceptions";
 	return 0;
 
 }

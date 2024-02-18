@@ -1,4 +1,5 @@
-//Compile with clang++ -O3 evil.cpp
+// Compile with clang++ -O3 evil.cpp
+// Enjoy the evil optimizer! 
 #include <cstdlib>
 
 using FUN=void();

@@ -1,3 +1,5 @@
+// #define true false is so dated, modern c++ is far more fun!
+
 #include <iostream>
 
 constexpr bool kill_me_pls(){
