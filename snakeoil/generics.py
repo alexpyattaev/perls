@@ -1,5 +1,5 @@
 from typing import *
-assert issubclass(List,List)
+assert issubclass(List, List)
 
-assert not issubclass(List[float],List[int])
+assert not issubclass(List[float], List[int])
 

@@ -27,9 +27,12 @@ class B2(B):
 a = A()
 a = A()
 a = A()
+
 b = B()
 b = B()
+
 a = A()
+
 b2 = B2()
 b2 = B2()
 
