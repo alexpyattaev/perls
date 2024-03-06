@@ -31,9 +31,10 @@ func getCar() *Car {
 func main() {
 	c := getICar()
 	if c == nil {
-		fmt.Println("exiting")
+		fmt.Println("Car is nil, exiting")
 		return
 	}
+	fmt.Println("Safe to start the car!")
 	c.Start() 
 }
 
