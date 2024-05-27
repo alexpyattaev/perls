@@ -9,7 +9,7 @@ Contributions are welcome from any mainstream programming language! Just make su
 
 # Wishlist
 Specimen from the following languages are highly desired:
- * Rust
+ * Rust (honorable mention goes https://github.com/rust-lang/rust/blob/master/tests/ui/weird-exprs.rs)
  * Zig
  * Odin
  * C#
