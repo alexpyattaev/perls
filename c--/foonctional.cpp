@@ -1,8 +1,17 @@
 #include <functional>
 
 struct Foo {};
-Foo get_foo();
-void with_foo(std::function<Foo const&()>);
+
+Foo get_foo()
+{
+	Foo x;
+	return x;
+};
+
+void with_foo(std::function<Foo const&()>)
+{
+
+}
 
 int main() {
     // gcc >=13 refuses to compile this

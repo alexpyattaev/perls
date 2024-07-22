@@ -5,8 +5,8 @@
 
 int main (void){
 	// stoul interprets an unsigned integer value in the string str. 
-	assert(std::stoul("-1") == std::stoul("18446744073709551615"));
+	assert(std::stoul("-3.1415") == std::stoul("18446744073709551613"));
 	
 	// as does strtoul from C stdlib.
-	assert(strtoul("-1", nullptr, 10) == strtoul("18446744073709551615", nullptr, 10));
+	assert(strtoul("-3.1415", nullptr, 10) == strtoul("18446744073709551613", nullptr, 10));
 }
