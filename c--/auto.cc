@@ -1,5 +1,5 @@
 //g++ -c -std=c++20 auto.cc
-//Types are for losers anyway!
+//Types are for suckers and losers!
 auto add(auto a, auto b) {return a+b;}
 
 #include <iostream>

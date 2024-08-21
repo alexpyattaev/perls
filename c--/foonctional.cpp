@@ -8,9 +8,9 @@ Foo get_foo()
 	return x;
 };
 
-void with_foo(std::function<Foo const&()>)
+void with_foo(std::function<Foo const&()> f)
 {
-
+auto v = f();
 }
 
 int main() {

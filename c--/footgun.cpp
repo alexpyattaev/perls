@@ -1,6 +1,6 @@
 void fun(int* a, int*b){
 	// Make sure a does not point to null, if so set b to 42
-	if (a==nullptr){
+	if (a!=nullptr){
 		*b = 42;
 	}
 	*a += 1;

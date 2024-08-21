@@ -13,7 +13,7 @@ int main(int argc, char** argv)
 	cout<<"Trying to reserve " << n << " GB of memory"<<endl;
 	n = n * 1024*1024*1024;
 	try{
-		std::vector<size_t> x;
+		std::vector<unsigned char> x;
 		x.reserve(n);
 		cout<<"Alloc ok, lets fill it with zeros..."<<endl;
 		for (size_t i = 0; i<n; i++){
