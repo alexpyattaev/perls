@@ -1,4 +1,4 @@
-rustc -C  target_cpu=native -C opt_level=3 passing.rs
+rustc +nightly  -C  target_cpu=native -C opt_level=3 -Zdefault_hidden_visibility=yes  passing.rs
 echo "by value"
 time ./passing 0 100000000 
 echo "by many parameters"
