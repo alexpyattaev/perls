@@ -5,6 +5,11 @@ pub struct Vector {
     z: f64,
     w: f64,
 }
+pub struct Vector3 {
+    x: f64,
+    y: f64,
+    z: f64,
+}
 
 #[inline(never)]
 pub fn vector_add_struct(left: Vector, right: Vector) -> Vector {
@@ -13,6 +18,14 @@ pub fn vector_add_struct(left: Vector, right: Vector) -> Vector {
         y: left.y + right.y,
         z: left.z + right.z,
         w: left.w + right.w,
+    };
+}
+#[inline(never)]
+pub fn vector3_add_struct(left: Vector3, right: Vector3) -> Vector3 {
+    return Vector3 {
+        x: left.x + right.x,
+        y: left.y + right.y,
+        z: left.z + right.z,
     };
 }
 
