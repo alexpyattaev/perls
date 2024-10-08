@@ -1,3 +1,4 @@
+// compile with g++ -Wall
 #include <iostream>
 
 
