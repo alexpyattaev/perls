@@ -1,8 +1,12 @@
 //Build with -O2
-
+#include <stdio.h>
 int i=1;
 int main(){
-	while(i){}
-	while(i){}
-	return 42;
+	printf("i=%d\n",i);
+	while(i){
+	}
+	while(i){
+	}
+	printf("i=%d\n",i);
+	return 42+i;
 }

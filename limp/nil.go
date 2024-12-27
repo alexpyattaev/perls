@@ -2,8 +2,6 @@
 
 package main
 
-
-
 type ICar interface {
 	Start()
 }
