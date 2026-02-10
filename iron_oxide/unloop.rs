@@ -1,5 +1,5 @@
-pub fn main(){
-    for _i in [0..42] {
+fn main(){
+    for _ in [0..42] {
         println!("Loopy loop");
     }
 }

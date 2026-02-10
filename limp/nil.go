@@ -1,5 +1,4 @@
 // go run nil.go
-
 package main
 
 type ICar interface {
